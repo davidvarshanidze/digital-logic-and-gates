@@ -24,5 +24,4 @@ initial begin
   #10 D = 1;
   #10 $stop;
 end
-
 endmodule
