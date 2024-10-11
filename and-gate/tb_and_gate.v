@@ -1,5 +1,4 @@
 module tb_and_gate;
-
     reg a;
     reg b;
     wire y;

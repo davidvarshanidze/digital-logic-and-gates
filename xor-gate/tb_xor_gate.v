@@ -1,5 +1,4 @@
 module tb_xor_gate;
-
     reg a;
     reg b;
     wire y;
