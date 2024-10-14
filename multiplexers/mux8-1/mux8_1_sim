@@ -1,0 +1,108 @@
+#! /opt/homebrew/Cellar/icarus-verilog/12.0/bin/vvp
+:ivl_version "12.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/system.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/v2005_math.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/va_math.vpi";
+S_0x143f043d0 .scope module, "tb_mux8_1" "tb_mux8_1" 2 1;
+ .timescale 0 0;
+v0x600000102640_0 .var "d", 7 0;
+v0x6000001026d0_0 .var "sel", 2 0;
+v0x600000102760_0 .net "y", 0 0, L_0x600000200be0;  1 drivers
+S_0x143f04540 .scope module, "uut" "mux8_1" 2 6, 3 1 0, S_0x143f043d0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 8 "d";
+    .port_info 1 /INPUT 3 "sel";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x148078010 .functor BUFT 1, C4<000>, C4<0>, C4<0>, C4<0>;
+v0x6000001014d0_0 .net/2u *"_ivl_0", 2 0, L_0x148078010;  1 drivers
+v0x600000101560_0 .net *"_ivl_11", 0 0, L_0x6000002001e0;  1 drivers
+L_0x1480780a0 .functor BUFT 1, C4<010>, C4<0>, C4<0>, C4<0>;
+v0x6000001015f0_0 .net/2u *"_ivl_12", 2 0, L_0x1480780a0;  1 drivers
+v0x600000101680_0 .net *"_ivl_14", 0 0, L_0x600000200280;  1 drivers
+v0x600000101710_0 .net *"_ivl_17", 0 0, L_0x600000200320;  1 drivers
+L_0x1480780e8 .functor BUFT 1, C4<011>, C4<0>, C4<0>, C4<0>;
+v0x6000001017a0_0 .net/2u *"_ivl_18", 2 0, L_0x1480780e8;  1 drivers
+v0x600000101830_0 .net *"_ivl_2", 0 0, L_0x600000200000;  1 drivers
+v0x6000001018c0_0 .net *"_ivl_20", 0 0, L_0x6000002003c0;  1 drivers
+v0x600000101950_0 .net *"_ivl_23", 0 0, L_0x600000200460;  1 drivers
+L_0x148078130 .functor BUFT 1, C4<100>, C4<0>, C4<0>, C4<0>;
+v0x6000001019e0_0 .net/2u *"_ivl_24", 2 0, L_0x148078130;  1 drivers
+v0x600000101a70_0 .net *"_ivl_26", 0 0, L_0x600000200500;  1 drivers
+v0x600000101b00_0 .net *"_ivl_29", 0 0, L_0x6000002005a0;  1 drivers
+L_0x148078178 .functor BUFT 1, C4<101>, C4<0>, C4<0>, C4<0>;
+v0x600000101b90_0 .net/2u *"_ivl_30", 2 0, L_0x148078178;  1 drivers
+v0x600000101c20_0 .net *"_ivl_32", 0 0, L_0x600000200640;  1 drivers
+v0x600000101cb0_0 .net *"_ivl_35", 0 0, L_0x6000002006e0;  1 drivers
+L_0x1480781c0 .functor BUFT 1, C4<110>, C4<0>, C4<0>, C4<0>;
+v0x600000101d40_0 .net/2u *"_ivl_36", 2 0, L_0x1480781c0;  1 drivers
+v0x600000101dd0_0 .net *"_ivl_38", 0 0, L_0x600000200780;  1 drivers
+v0x600000101e60_0 .net *"_ivl_41", 0 0, L_0x600000200820;  1 drivers
+v0x600000101ef0_0 .net *"_ivl_43", 0 0, L_0x6000002008c0;  1 drivers
+v0x600000101f80_0 .net *"_ivl_44", 0 0, L_0x600000200960;  1 drivers
+v0x600000102010_0 .net *"_ivl_46", 0 0, L_0x600000200a00;  1 drivers
+v0x6000001020a0_0 .net *"_ivl_48", 0 0, L_0x600000200aa0;  1 drivers
+v0x600000102130_0 .net *"_ivl_5", 0 0, L_0x6000002000a0;  1 drivers
+v0x6000001021c0_0 .net *"_ivl_50", 0 0, L_0x600000200b40;  1 drivers
+v0x600000102250_0 .net *"_ivl_52", 0 0, L_0x600000200c80;  1 drivers
+v0x6000001022e0_0 .net *"_ivl_54", 0 0, L_0x600000200d20;  1 drivers
+L_0x148078058 .functor BUFT 1, C4<001>, C4<0>, C4<0>, C4<0>;
+v0x600000102370_0 .net/2u *"_ivl_6", 2 0, L_0x148078058;  1 drivers
+v0x600000102400_0 .net *"_ivl_8", 0 0, L_0x600000200140;  1 drivers
+v0x600000102490_0 .net "d", 7 0, v0x600000102640_0;  1 drivers
+v0x600000102520_0 .net "sel", 2 0, v0x6000001026d0_0;  1 drivers
+v0x6000001025b0_0 .net "y", 0 0, L_0x600000200be0;  alias, 1 drivers
+L_0x600000200000 .cmp/eq 3, v0x6000001026d0_0, L_0x148078010;
+L_0x6000002000a0 .part v0x600000102640_0, 0, 1;
+L_0x600000200140 .cmp/eq 3, v0x6000001026d0_0, L_0x148078058;
+L_0x6000002001e0 .part v0x600000102640_0, 1, 1;
+L_0x600000200280 .cmp/eq 3, v0x6000001026d0_0, L_0x1480780a0;
+L_0x600000200320 .part v0x600000102640_0, 2, 1;
+L_0x6000002003c0 .cmp/eq 3, v0x6000001026d0_0, L_0x1480780e8;
+L_0x600000200460 .part v0x600000102640_0, 3, 1;
+L_0x600000200500 .cmp/eq 3, v0x6000001026d0_0, L_0x148078130;
+L_0x6000002005a0 .part v0x600000102640_0, 4, 1;
+L_0x600000200640 .cmp/eq 3, v0x6000001026d0_0, L_0x148078178;
+L_0x6000002006e0 .part v0x600000102640_0, 5, 1;
+L_0x600000200780 .cmp/eq 3, v0x6000001026d0_0, L_0x1480781c0;
+L_0x600000200820 .part v0x600000102640_0, 6, 1;
+L_0x6000002008c0 .part v0x600000102640_0, 7, 1;
+L_0x600000200960 .functor MUXZ 1, L_0x6000002008c0, L_0x600000200820, L_0x600000200780, C4<>;
+L_0x600000200a00 .functor MUXZ 1, L_0x600000200960, L_0x6000002006e0, L_0x600000200640, C4<>;
+L_0x600000200aa0 .functor MUXZ 1, L_0x600000200a00, L_0x6000002005a0, L_0x600000200500, C4<>;
+L_0x600000200b40 .functor MUXZ 1, L_0x600000200aa0, L_0x600000200460, L_0x6000002003c0, C4<>;
+L_0x600000200c80 .functor MUXZ 1, L_0x600000200b40, L_0x600000200320, L_0x600000200280, C4<>;
+L_0x600000200d20 .functor MUXZ 1, L_0x600000200c80, L_0x6000002001e0, L_0x600000200140, C4<>;
+L_0x600000200be0 .functor MUXZ 1, L_0x600000200d20, L_0x6000002000a0, L_0x600000200000, C4<>;
+    .scope S_0x143f043d0;
+T_0 ;
+    %pushi/vec4 170, 0, 8;
+    %store/vec4 v0x600000102640_0, 0, 8;
+    %pushi/vec4 0, 0, 3;
+    %store/vec4 v0x6000001026d0_0, 0, 3;
+    %delay 10, 0;
+    %vpi_call 2 15 "$display", "Sel = %b, d = %b -> y = %b", v0x6000001026d0_0, v0x600000102640_0, v0x600000102760_0 {0 0 0};
+    %pushi/vec4 1, 0, 3;
+    %store/vec4 v0x6000001026d0_0, 0, 3;
+    %delay 10, 0;
+    %vpi_call 2 19 "$display", "Sel = %b, d = %b -> y = %b", v0x6000001026d0_0, v0x600000102640_0, v0x600000102760_0 {0 0 0};
+    %pushi/vec4 2, 0, 3;
+    %store/vec4 v0x6000001026d0_0, 0, 3;
+    %delay 10, 0;
+    %vpi_call 2 23 "$display", "Sel = %b, d = %b -> y = %b", v0x6000001026d0_0, v0x600000102640_0, v0x600000102760_0 {0 0 0};
+    %pushi/vec4 3, 0, 3;
+    %store/vec4 v0x6000001026d0_0, 0, 3;
+    %delay 10, 0;
+    %vpi_call 2 27 "$display", "Sel = %b, d = %b -> y = %b", v0x6000001026d0_0, v0x600000102640_0, v0x600000102760_0 {0 0 0};
+    %vpi_call 2 31 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "tb_mux8_1.v";
+    "mux8_1.v";

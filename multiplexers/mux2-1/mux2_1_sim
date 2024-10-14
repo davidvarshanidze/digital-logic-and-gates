@@ -1,0 +1,49 @@
+#! /opt/homebrew/Cellar/icarus-verilog/12.0/bin/vvp
+:ivl_version "12.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/system.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/v2005_math.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/va_math.vpi";
+S_0x12ff04080 .scope module, "tb_mux2_1" "tb_mux2_1" 2 1;
+ .timescale 0 0;
+v0x600003fa0240_0 .var "a", 0 0;
+v0x600003fa02d0_0 .var "b", 0 0;
+v0x600003fa0360_0 .var "sel", 0 0;
+v0x600003fa03f0_0 .net "y", 0 0, L_0x600003ca4000;  1 drivers
+S_0x12ff041f0 .scope module, "uut" "mux2_1" 2 5, 3 1 0, S_0x12ff04080;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /INPUT 1 "sel";
+    .port_info 3 /OUTPUT 1 "y";
+v0x600003fa0000_0 .net "a", 0 0, v0x600003fa0240_0;  1 drivers
+v0x600003fa0090_0 .net "b", 0 0, v0x600003fa02d0_0;  1 drivers
+v0x600003fa0120_0 .net "sel", 0 0, v0x600003fa0360_0;  1 drivers
+v0x600003fa01b0_0 .net "y", 0 0, L_0x600003ca4000;  alias, 1 drivers
+L_0x600003ca4000 .functor MUXZ 1, v0x600003fa0240_0, v0x600003fa02d0_0, v0x600003fa0360_0, C4<>;
+    .scope S_0x12ff04080;
+T_0 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x600003fa0240_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x600003fa02d0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x600003fa0360_0, 0, 1;
+    %delay 10, 0;
+    %vpi_call 2 15 "$display", "Sel = 0, a = %b, b = %b -> y = %b", v0x600003fa0240_0, v0x600003fa02d0_0, v0x600003fa03f0_0 {0 0 0};
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x600003fa0360_0, 0, 1;
+    %delay 10, 0;
+    %vpi_call 2 19 "$display", "Sel = 1, a = %b, b = %b -> y = %b", v0x600003fa0240_0, v0x600003fa02d0_0, v0x600003fa03f0_0 {0 0 0};
+    %vpi_call 2 21 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "tb_mux2_1.v";
+    "mux2_1.v";
