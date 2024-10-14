@@ -1,0 +1,112 @@
+#! /opt/homebrew/Cellar/icarus-verilog/12.0/bin/vvp
+:ivl_version "12.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/system.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/v2005_math.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/va_math.vpi";
+S_0x129e064f0 .scope module, "tb_binary_arithmetic" "tb_binary_arithmetic" 2 1;
+ .timescale 0 0;
+v0x600003365dd0_0 .var "a", 7 0;
+v0x600003365e60_0 .var "b", 7 0;
+v0x600003365ef0_0 .net "diff", 7 0, L_0x6000030640a0;  1 drivers
+v0x600003365f80_0 .net "prod", 15 0, L_0x600003064280;  1 drivers
+v0x600003366010_0 .net "quot", 7 0, L_0x600003064500;  1 drivers
+v0x6000033660a0_0 .net "rem", 7 0, L_0x600003064780;  1 drivers
+v0x600003366130_0 .net "sum", 7 0, L_0x600003064000;  1 drivers
+S_0x129e049a0 .scope module, "uut" "binary_arithmetic" 2 11, 3 1 0, S_0x129e064f0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 8 "a";
+    .port_info 1 /INPUT 8 "b";
+    .port_info 2 /OUTPUT 8 "sum";
+    .port_info 3 /OUTPUT 8 "diff";
+    .port_info 4 /OUTPUT 16 "prod";
+    .port_info 5 /OUTPUT 8 "quot";
+    .port_info 6 /OUTPUT 8 "rem";
+L_0x130078058 .functor BUFT 1, C4<00000000>, C4<0>, C4<0>, C4<0>;
+v0x6000033650e0_0 .net *"_ivl_11", 7 0, L_0x130078058;  1 drivers
+v0x600003365170_0 .net *"_ivl_14", 31 0, L_0x600003064320;  1 drivers
+L_0x1300780a0 .functor BUFT 1, C4<000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0x600003365200_0 .net *"_ivl_17", 23 0, L_0x1300780a0;  1 drivers
+L_0x1300780e8 .functor BUFT 1, C4<00000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0x600003365290_0 .net/2u *"_ivl_18", 31 0, L_0x1300780e8;  1 drivers
+v0x600003365320_0 .net *"_ivl_20", 0 0, L_0x6000030643c0;  1 drivers
+v0x6000033653b0_0 .net *"_ivl_22", 7 0, L_0x600003064460;  1 drivers
+L_0x130078130 .functor BUFT 1, C4<00000000>, C4<0>, C4<0>, C4<0>;
+v0x600003365440_0 .net/2u *"_ivl_24", 7 0, L_0x130078130;  1 drivers
+v0x6000033654d0_0 .net *"_ivl_28", 31 0, L_0x6000030645a0;  1 drivers
+L_0x130078178 .functor BUFT 1, C4<000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0x600003365560_0 .net *"_ivl_31", 23 0, L_0x130078178;  1 drivers
+L_0x1300781c0 .functor BUFT 1, C4<00000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0x6000033655f0_0 .net/2u *"_ivl_32", 31 0, L_0x1300781c0;  1 drivers
+v0x600003365680_0 .net *"_ivl_34", 0 0, L_0x600003064640;  1 drivers
+v0x600003365710_0 .net *"_ivl_36", 7 0, L_0x6000030646e0;  1 drivers
+L_0x130078208 .functor BUFT 1, C4<00000000>, C4<0>, C4<0>, C4<0>;
+v0x6000033657a0_0 .net/2u *"_ivl_38", 7 0, L_0x130078208;  1 drivers
+v0x600003365830_0 .net *"_ivl_4", 15 0, L_0x600003064140;  1 drivers
+L_0x130078010 .functor BUFT 1, C4<00000000>, C4<0>, C4<0>, C4<0>;
+v0x6000033658c0_0 .net *"_ivl_7", 7 0, L_0x130078010;  1 drivers
+v0x600003365950_0 .net *"_ivl_8", 15 0, L_0x6000030641e0;  1 drivers
+v0x6000033659e0_0 .net "a", 7 0, v0x600003365dd0_0;  1 drivers
+v0x600003365a70_0 .net "b", 7 0, v0x600003365e60_0;  1 drivers
+v0x600003365b00_0 .net "diff", 7 0, L_0x6000030640a0;  alias, 1 drivers
+v0x600003365b90_0 .net "prod", 15 0, L_0x600003064280;  alias, 1 drivers
+v0x600003365c20_0 .net "quot", 7 0, L_0x600003064500;  alias, 1 drivers
+v0x600003365cb0_0 .net "rem", 7 0, L_0x600003064780;  alias, 1 drivers
+v0x600003365d40_0 .net "sum", 7 0, L_0x600003064000;  alias, 1 drivers
+L_0x600003064000 .arith/sum 8, v0x600003365dd0_0, v0x600003365e60_0;
+L_0x6000030640a0 .arith/sub 8, v0x600003365dd0_0, v0x600003365e60_0;
+L_0x600003064140 .concat [ 8 8 0 0], v0x600003365dd0_0, L_0x130078010;
+L_0x6000030641e0 .concat [ 8 8 0 0], v0x600003365e60_0, L_0x130078058;
+L_0x600003064280 .arith/mult 16, L_0x600003064140, L_0x6000030641e0;
+L_0x600003064320 .concat [ 8 24 0 0], v0x600003365e60_0, L_0x1300780a0;
+L_0x6000030643c0 .cmp/ne 32, L_0x600003064320, L_0x1300780e8;
+L_0x600003064460 .arith/div 8, v0x600003365dd0_0, v0x600003365e60_0;
+L_0x600003064500 .functor MUXZ 8, L_0x130078130, L_0x600003064460, L_0x6000030643c0, C4<>;
+L_0x6000030645a0 .concat [ 8 24 0 0], v0x600003365e60_0, L_0x130078178;
+L_0x600003064640 .cmp/ne 32, L_0x6000030645a0, L_0x1300781c0;
+L_0x6000030646e0 .arith/mod 8, v0x600003365dd0_0, v0x600003365e60_0;
+L_0x600003064780 .functor MUXZ 8, L_0x130078208, L_0x6000030646e0, L_0x600003064640, C4<>;
+    .scope S_0x129e064f0;
+T_0 ;
+    %pushi/vec4 10, 0, 8;
+    %store/vec4 v0x600003365dd0_0, 0, 8;
+    %pushi/vec4 5, 0, 8;
+    %store/vec4 v0x600003365e60_0, 0, 8;
+    %delay 10, 0;
+    %vpi_call 2 24 "$display", "a = %d, b = %d, sum = %d, diff = %d, prod = %d, quot = %d, rem = %d", v0x600003365dd0_0, v0x600003365e60_0, v0x600003366130_0, v0x600003365ef0_0, v0x600003365f80_0, v0x600003366010_0, v0x6000033660a0_0 {0 0 0};
+    %pushi/vec4 25, 0, 8;
+    %store/vec4 v0x600003365dd0_0, 0, 8;
+    %pushi/vec4 3, 0, 8;
+    %store/vec4 v0x600003365e60_0, 0, 8;
+    %delay 10, 0;
+    %vpi_call 2 28 "$display", "a = %d, b = %d, sum = %d, diff = %d, prod = %d, quot = %d, rem = %d", v0x600003365dd0_0, v0x600003365e60_0, v0x600003366130_0, v0x600003365ef0_0, v0x600003365f80_0, v0x600003366010_0, v0x6000033660a0_0 {0 0 0};
+    %pushi/vec4 50, 0, 8;
+    %store/vec4 v0x600003365dd0_0, 0, 8;
+    %pushi/vec4 0, 0, 8;
+    %store/vec4 v0x600003365e60_0, 0, 8;
+    %delay 10, 0;
+    %vpi_call 2 32 "$display", "a = %d, b = %d, sum = %d, diff = %d, prod = %d, quot = %d, rem = %d", v0x600003365dd0_0, v0x600003365e60_0, v0x600003366130_0, v0x600003365ef0_0, v0x600003365f80_0, v0x600003366010_0, v0x6000033660a0_0 {0 0 0};
+    %pushi/vec4 100, 0, 8;
+    %store/vec4 v0x600003365dd0_0, 0, 8;
+    %pushi/vec4 25, 0, 8;
+    %store/vec4 v0x600003365e60_0, 0, 8;
+    %delay 10, 0;
+    %vpi_call 2 36 "$display", "a = %d, b = %d, sum = %d, diff = %d, prod = %d, quot = %d, rem = %d", v0x600003365dd0_0, v0x600003365e60_0, v0x600003366130_0, v0x600003365ef0_0, v0x600003365f80_0, v0x600003366010_0, v0x6000033660a0_0 {0 0 0};
+    %pushi/vec4 15, 0, 8;
+    %store/vec4 v0x600003365dd0_0, 0, 8;
+    %pushi/vec4 7, 0, 8;
+    %store/vec4 v0x600003365e60_0, 0, 8;
+    %delay 10, 0;
+    %vpi_call 2 40 "$display", "a = %d, b = %d, sum = %d, diff = %d, prod = %d, quot = %d, rem = %d", v0x600003365dd0_0, v0x600003365e60_0, v0x600003366130_0, v0x600003365ef0_0, v0x600003365f80_0, v0x600003366010_0, v0x6000033660a0_0 {0 0 0};
+    %vpi_call 2 42 "$stop" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "tb_binary_arithmetic.v";
+    "binary_arithmetic.v";
